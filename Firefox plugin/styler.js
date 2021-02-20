@@ -1,7 +1,6 @@
 // https://github.com/mdn/webextensions-examples/tree/master/apply-css was used to make this code
 
-const CSS = ".ghx-column.ghx-busted.ghx-busted-max.ghx-narrow-card { background: #3bb910; } ";
-
+const CSS = ".adg3 .ghx-column-headers .ghx-column.ghx-busted-max, .adg3 .ghx-columns .ghx-column.ghx-busted-max { background: #3bb910; } ";
 
 const TITLE_APPLY = "Apply style";
 const TITLE_REMOVE = "Remove style";
