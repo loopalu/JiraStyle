@@ -7,7 +7,7 @@
   "homepage_url": "https://github.com/loopalu/JiraStyle",
 
   "description": "Changes the color of column in Jira board.",
-  "version": "1.1.2",
+  "version": "1.1.3",
 
   "icons": {
     "48": "icons/letter-j-48-blue.png",
@@ -15,12 +15,22 @@
   },
 
   "background": {
-    "scripts": ["styler.js"]
+    "scripts": ["extensionButtonFunctionality.js"]
   },
 
+  "content_scripts": [
+    {
+      "matches": ["*://*.jira.com/*"],
+      "js": ["pageFunctionality.js"],
+      "run_at": "document_end",
+      "all_frames": true
+    }
+  ],
+
   "permissions": [
-    "activeTab",
-    "tabs"
+    "tabs",
+    "storage",
+    "topSites"
   ],
 
   "browser_specific_settings": {
