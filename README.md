@@ -12,14 +12,17 @@ Browser extension for customizing the style of columns in Jira board.
 <ul>
 	<li>Green style for replacing a red column on Jira board.</li>
 	<li>Extension button to switch the style on and off.</li>
+    <li>Style change is now permanent on page/tab reloading.</li>
 </ul>
 
 ***
 ## To do
 
 <ul>
-	<li>Make the style permanent on page/tab loading.</li>
-	<li>Fix issue with the extension's button where it switches to passive color mode when switching tabs.</li>
+	<li>Turn on the style without reloading the page.</li>
+	<li>Fix issue when sometimes on initial extension loading it takes 3 clicks to switch style off.</li>
+    <li>Replace deprecated addListener.</li>
+    <li>Fix "Error: Could not establish connection. Receiving end does not exist." error when sending messages from extension to tabs.</li>
 	<li>Add color picker option for choosing a custom color instead of default green color.</li>
 	<li>Chrome extension.</li>
 </ul>
