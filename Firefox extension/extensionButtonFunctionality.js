@@ -26,7 +26,6 @@ function initializebrowserAction(tab) {
             browser.browserAction.setIcon({tabId: tab.id, path: "icons/letter-j-48-gray.png"});
             browser.browserAction.setTitle({tabId: tab.id, title: TITLE_APPLY});
         }
-        //browser.browserAction.show(tab.id);
     }
 }
 
@@ -73,10 +72,8 @@ function notifyModeChange (newMode) {
 browser.storage.local.get(["JiraStyle"], function(items){
     if (items["JiraStyle"] === 'off') {
         styleIsOn = false;
-        //setLightProperties();
     } else {
         styleIsOn = true;
-        //setDarkProperties();
     }
 });
 

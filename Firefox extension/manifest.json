@@ -7,7 +7,7 @@
   "homepage_url": "https://github.com/loopalu/JiraStyle",
 
   "description": "Changes the color of column in Jira board.",
-  "version": "1.1.4",
+  "version": "1.1.5",
 
   "icons": {
     "48": "icons/letter-j-48-blue.png",

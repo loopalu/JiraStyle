@@ -20,8 +20,8 @@ function changeStyleImportance(){
 // Toggle style on/off when toggle is activated.
 function toggleStyle(message, sender, sendResponse) {
     if (message.action === 'on') {
-        document.getElementsByTagName("head")[0].appendChild(style);
-        location.reload();
+        browser.storage.local.get(["JiraStyle"], injectOnLoad);
+        changeStyleImportance()
     }
     else if (message.action === 'off') {
         var element = document.getElementById('JiraStyle');

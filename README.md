@@ -19,7 +19,6 @@ Browser extension for customizing the style of columns in Jira board.
 ## To do
 
 <ul>
-	<li>Turn on the style without reloading the page.</li>
     <li>Replace deprecated addListener.</li>
     <li>Fix "Error: Could not establish connection. Receiving end does not exist." error when sending messages from extension to tabs.</li>
 	<li>Add color picker option for choosing a custom color instead of default green color.</li>
